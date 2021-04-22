@@ -1,10 +1,8 @@
-package middleware/admin
+package middleware
 
 import (
 	"github.com/dgrijalva/jwt-go"
 	"github.com/dgrijalva/jwt-go/request"
-	"go-clinic/models"
-	"go-clinic/controller"
 	"gopkg.in/gin-gonic/gin.v1"
 	"net/http"
 	"strings"

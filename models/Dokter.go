@@ -1,6 +1,6 @@
 package models
 
-type ApotekerModel struct {
+type DokterModel struct {
 	ID           uint    `gorm:"primary_key"`
 	Username     string  `gorm:"column:username"`
 	Email        string  `gorm:"column:email;unique_index"`
