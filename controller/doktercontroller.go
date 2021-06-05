@@ -2,13 +2,14 @@ package controller
 
 import (
 	"fmt"
+	"github.com/gin-gonic/gin"
 	"go-clinic/database"
 	"go-clinic/models"
-	"github.com/gin-gonic/gin"
 )
 
 var tx = database.GetDB()
 var DokterModel []models.Dokter
+
 // GetUsers get all the user record form db
 func GetDokters(c *gin.Context) {
 	var dokters []models.Dokter
@@ -76,5 +77,3 @@ func (model *ApotekerModel) UpdateApoteker(data interface{}) error {
 	err := tx.Model(model).Update(data).Error
 	return err
 }
-
-

@@ -1,5 +1,5 @@
 // Common tools and helper functions
-package app.dokter
+package app
 
 import (
 	"fmt"
@@ -9,8 +9,8 @@ import (
 	"github.com/dgrijalva/jwt-go"
 	"gopkg.in/go-playground/validator.v8"
 
-	"github.com/gin-gonic/gin/binding"
 	"github.com/gin-gonic/gin"
+	"github.com/gin-gonic/gin/binding"
 )
 
 var letters = []rune("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789")

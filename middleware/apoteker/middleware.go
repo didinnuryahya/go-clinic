@@ -1,4 +1,4 @@
-package middleware/admin
+package middlewareapoteker
 
 import (
 	"github.com/dgrijalva/jwt-go"
